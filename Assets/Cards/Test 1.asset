@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb331c70c4e3d645a574051accfd744, type: 3}
+  m_Name: Test 1
+  m_EditorClassIdentifier: 
+  artwork: {fileID: 21300000, guid: 738b44ecff012b840a02d29da1382298, type: 3}
+  name: Agas
+  description: Cuando entra en juego roba 5 cartas
+  legend: Otra carta
+  invokeBehavior: {fileID: 0}
+  destroyBehavior: {fileID: 0}
+  goldCost: 10
+  attack: 20
+  attackBehavior: {fileID: 0}
+  defenseBehavior: {fileID: 0}
+  mAttributes: 13
