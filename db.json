@@ -2,10 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "title": "hello"
+      "latitude": 0,
+      "longitude": 0
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
