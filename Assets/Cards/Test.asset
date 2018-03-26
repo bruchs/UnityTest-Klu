@@ -18,7 +18,7 @@ MonoBehaviour:
   invokeBehavior: {fileID: 0}
   destroyBehavior: {fileID: 0}
   goldCost: 5
-  attack: 6
+  attackPoints: 9
   attackBehavior: {fileID: 0}
   defenseBehavior: {fileID: 0}
   Atributtes: 21

@@ -12,9 +12,12 @@ public class BaseCardUI : MonoBehaviour
 
     public void Start()
     {
-        UIArtwork.sprite = cardData.artwork;
-        UIDescription.text = cardData.description;
-        UIName.text = cardData.name;
-        UILegend.text = cardData.legend;
+        if(cardData != null)
+        {
+            UIArtwork.sprite = cardData.artwork;
+            UIDescription.text = cardData.description;
+            UIName.text = cardData.name;
+            UILegend.text = cardData.legend;
+        }
     }
 }

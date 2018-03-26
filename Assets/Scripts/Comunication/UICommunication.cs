@@ -18,6 +18,7 @@ public class UICommunication : MonoBehaviour
 
     public InputField geographicCoordinatesInputField;
     public Text geographicCoordinatesOutput;
+    public RawImage staticMapImage;
 
     public string GetGeographicCordinatesInput()
     {
@@ -27,5 +28,10 @@ public class UICommunication : MonoBehaviour
     public void SetGeographicCordinatesOutput(string output)
     {
         geographicCoordinatesOutput.text = output;
+    }
+
+    public void SetStaticMapTexture(Texture2D mapTexture)
+    {
+        staticMapImage.texture = mapTexture;
     }
 }
