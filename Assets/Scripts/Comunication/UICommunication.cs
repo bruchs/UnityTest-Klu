@@ -17,8 +17,14 @@ public class UICommunication : MonoBehaviour
     private static UICommunication _instance;
 
     public InputField geographicCoordinatesInputField;
+    public InputField commentsInputField;
+
     public Text geographicCoordinatesOutput;
+    public Text commentsOutput;
     public RawImage staticMapImage;
+
+    public Transform postParent;
+    public GameObject postGameObject;
 
     public string GetGeographicCordinatesInput()
     {
@@ -33,5 +39,24 @@ public class UICommunication : MonoBehaviour
     public void SetStaticMapTexture(Texture2D mapTexture)
     {
         staticMapImage.texture = mapTexture;
+    }
+
+    public string GetCommentsInput()
+    {
+        return commentsInputField.text;
+    }
+
+    public void SetCommentsOutput(string output)
+    {
+        commentsOutput.text = output;
+    }
+
+    public void GeneratePost(string id, string title)
+    {
+        GameObject postGO = Instantiate(postGameObject);
+        postGO.transform.SetParent(postParent);
+
+        Text postText = postGO.GetComponentInChildren<Text>();
+        postText.text = "ID: " + id + " - Title: " + title;
     }
 }
