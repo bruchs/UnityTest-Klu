@@ -13,6 +13,14 @@ public class CardsController : MonoBehaviour
         currentCards = new List<GameObject>();
     }
 
+    private void Update()
+    {
+        foreach(GameObject cardGO in currentCards)
+        {
+            cardGO.transform.localScale = new Vector3(1,1,1);
+        }
+    }
+
     public void InitializeCards()
     {
         foreach(GameObject cardGO in currentCards)
